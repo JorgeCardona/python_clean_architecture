@@ -36,7 +36,6 @@ This project is a base template for building Python microservices using Clean Ar
 
 # 🛸 PROJECT PACKAGES STRUCTURE
 ```
-
 📦 jorge_cardona_project [project_directory]
 ┣ 🧩 application [package]                     ← Lógica principal y orquestación del microservicio
 ┃ ┣ 🎄 main.py [__main__]                      ← Punto de entrada: inicia la API, configura rutas y dependencias
