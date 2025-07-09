@@ -23,7 +23,7 @@ This project is a base template for building Python microservices using Clean Ar
 ┃ ┣ 🎰 terraform  [directory]                  ← Punto de entrada de la app. Configura la API, inyecta dependencias y expone los endpoints
 ┣ 🔩 pipelines [directory]                     ← Automatización de Integración y Despliegue Continuo (CI/CD)
 ┃ ┣ 🧬 templates [directory]                   ← Plantillas reutilizables para configuración de entornos y despliegue.
-┣ 📂 logs [directory]                          ← Carpeta donde se generan y almacenan archivos `.log` de ejecución (ej. app.log, db.log)
+┣ 📈 logs [directory]                          ← Carpeta donde se generan y almacenan archivos `.log` de ejecución (ej. app.log, db.log)
 ┣ 📊 reports [directory]                       ← Reportes generados automáticamente (ej. cobertura de tests, análisis estático, etc.)
 ┣ 📦 requirements [directory]                  ← Archivos de dependencias por entorno (`base.txt`, `dev.txt`, `test.txt`, etc.)
 ┣ 🧪 test [directory]                          ← Pruebas del sistema organizadas por tipo
@@ -168,7 +168,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>📂 <strong>logs</strong>/ — Archivos de auditoría</summary>
+<details><summary>📈 <strong>logs</strong>/ — Archivos de auditoría</summary>
 <pre>
 📑 app.log — Logs generales de ejecución
 📑 db.log — Logs de operaciones de base de datos
