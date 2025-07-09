@@ -55,27 +55,23 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 <details><summary>🛠️ <strong>configuration</strong>/ — Configuraciones modulares para cada contexto (API, DB, logging...)</summary>
 <pre>
 🐍 __init__.py — Expone todas las subconfiguraciones
-
+📄.env — Variables de entorno privadas: credenciales, configuración por entorno y claves de API. No debe subirse al repositorio.
+  
 📂 rest/
   ┣ 🐍 __init__.py
   ┗ 🏩 app_configuration.py — Configuración general de la API
-
 📂 environment/
   ┣ 🐍 __init__.py
   ┗ 📡 environment_configuration.py — Variables de entorno y configuración dinámica
-
 📂 database/
   ┣ 🐍 __init__.py
   ┗ 🔑 database_configuration.py — URI de conexión, ORM, pool de sesiones
-
 📂 log/
   ┣ 🐍 __init__.py
   ┗ 📜 log_configuration.py — Formato, handlers y nivel de logs
-
 📂 cors/
   ┣ 🐍 __init__.py
   ┗ 🚧 cors_configuration.py — Reglas de CORS (Cross-Origin Resource Sharing)
-
 📂 swagger/
   ┣ 🐍 __init__.py
   ┗ 📪 swagger_configuration.py — Metadatos y visualización Swagger UI
