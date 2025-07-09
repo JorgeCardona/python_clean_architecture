@@ -22,7 +22,7 @@ This project is a base template for building Python microservices using Clean Ar
 ┣ 🧱 infraestructure [directory]               ← Archivos para empaquetar y desplegar el microservicio (Dockerfile, Kubernetes manifests, Terraform, etc.)
 ┃ ┣ 🎰 terraform  [directory]                  ← Punto de entrada de la app. Configura la API, inyecta dependencias y expone los endpoints
 ┣ 🔩 pipelines [directory]                     ← Automatización de Integración y Despliegue Continuo (CI/CD)
-┃ ┣ 📂 templates [directory]                   ← Plantillas reutilizables para configuración de entornos y despliegue.
+┃ ┣ 🧬 templates [directory]                   ← Plantillas reutilizables para configuración de entornos y despliegue.
 ┣ 📂 logs [directory]                          ← Carpeta donde se generan y almacenan archivos `.log` de ejecución (ej. app.log, db.log)
 ┣ 📊 reports [directory]                       ← Reportes generados automáticamente (ej. cobertura de tests, análisis estático, etc.)
 ┣ 📦 requirements [directory]                  ← Archivos de dependencias por entorno (`base.txt`, `dev.txt`, `test.txt`, etc.)
@@ -42,7 +42,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 
 📦 jorge_cardona_project — Estructura completa
 
-<details><summary>🧩 application/ — Núcleo del microservicio: orquestación, configuración, dominio y servicios</summary>
+<details><summary>🧩 <strong>application</strong>/ — Núcleo del microservicio: orquestación, configuración, dominio y servicios</summary>
 
 <details><summary>🎄 main.py [__main__]</summary>
 <pre>🐍 main.py — Punto de entrada que lanza FastAPI y configura dependencias</pre>
@@ -52,7 +52,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 <pre>🐍 __init__.py — Permite tratar `application` como un paquete importable</pre>
 </details>
 
-<details><summary>🛠️ configuration/ — Configuraciones modulares para cada contexto (API, DB, logging...)</summary>
+<details><summary>🛠️ <strong>configuration</strong>/ — Configuraciones modulares para cada contexto (API, DB, logging...)</summary>
 <pre>
 🐍 __init__.py — Expone todas las subconfiguraciones
 
@@ -82,7 +82,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>🧰 utils/ — Funciones auxiliares reutilizables sin lógica de negocio</summary>
+<details><summary>🧰 <strong>utils</strong>/ — Funciones auxiliares reutilizables sin lógica de negocio</summary>
 <pre>
 🐍 __init__.py
 🐍 script.py — Funciones genéricas: fechas, formateos, validaciones
@@ -91,11 +91,11 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>🧠 domain/ — Capa central del negocio (arquitectura limpia)</summary>
+<details><summary>🧠 <strong>domain</strong>/ — Capa central del negocio (arquitectura limpia)</summary>
 
-<details><summary>🧱 entities/ — Modelos de dominio</summary>
+<details><summary>🧱 <strong>entities</strong>/ — Modelos de dominio</summary>
 
-<details><summary>📂 models/ — Representan entidades de base de datos</summary>
+<details><summary>📂 <strong>models</strong>/ — Representan entidades de base de datos</summary>
 <pre>
 🐍 __init__.py
 🐍 model_for_entity_ONE.py — Estructura @dataclass equivalente a tabla ONE
@@ -104,7 +104,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>📂 schemas/ — Validación de datos para entrada/salida</summary>
+<details><summary>📂 <strong>schemas</strong>/ — Validación de datos para entrada/salida</summary>
 <pre>
 🐍 __init__.py
 💦 schema_for_entity_ONE.py — Pydantic: validación y serialización de ONE
@@ -114,9 +114,9 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </details>
 </details>
 
-<details><summary>📜 interfaces/ — Contratos abstractos para repositorios y servicios externos</summary>
+<details><summary>📜 <strong>interfaces</strong>/ — Contratos abstractos para repositorios y servicios externos</summary>
 
-<details><summary>🗃️ repositories/</summary>
+<details><summary>🗃️ <strong>repositories</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐟 database_method_model_Entity_ONE.py — Métodos abstractos: buscar, guardar...
@@ -125,7 +125,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>🌐 business_logic/</summary>
+<details><summary>🌐 <strong>business_logic</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐦 business_logic_method_model_Entity_ONE.py — Por ejemplo: EmailSender, TokenProvider
@@ -135,7 +135,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </details>
 </details>
 
-<details><summary>🧭 usecases/ — Casos de uso que orquestan entidades e interfaces</summary>
+<details><summary>🧭 <strong>usecases</strong>/ — Casos de uso que orquestan entidades e interfaces</summary>
 <pre>
 🐍 __init__.py
 🎎 use_case_implementation_business_repository_logic_model_ONE.py
@@ -144,7 +144,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>🎛️ services/ — Implementaciones conectadas a la infraestructura real</summary>
+<details><summary>🎛️ <strong>services</strong>/ — Implementaciones conectadas a la infraestructura real</summary>
 <pre>
 🐍 __init__.py
 ✈️ services_use_case_implementation_model_ONE.py
@@ -155,7 +155,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </details>
 </details>
 
-<details><summary>📦 infrastructure/ — Scripts de empaquetado y despliegue (Docker, K8s, Terraform)</summary>
+<details><summary>📦 <strong>infrastructure</strong>/ — Scripts de empaquetado y despliegue (Docker, K8s, Terraform)</summary>
 <pre>
 🐍 __init__.py
 🐳 Dockerfile — Imagen base y comandos de construcción
@@ -168,7 +168,7 @@ Cada directorio cumple una función específica dentro de la arquitectura, asegu
 </pre>
 </details>
 
-<details><summary>📂 logs/ — Archivos de auditoría</summary>
+<details><summary>📂 <strong>logs</strong>/ — Archivos de auditoría</summary>
 <pre>
 📑 app.log — Logs generales de ejecución
 📑 db.log — Logs de operaciones de base de datos
@@ -226,14 +226,14 @@ Incluye:
 
 </details>
 
-<details><summary>📊 reports/ — Reportes de calidad y cobertura</summary>
+<details><summary>📊 <strong>reports</strong>/ — Reportes de calidad y cobertura</summary>
 <pre>
 📄 coverage.html — Cobertura de tests
 📜 htmlcov/main_py.html — Archivos HTML generados por coverage.py
 </pre>
 </details>
 
-<details><summary>📦 requirements/ — Dependencias por entorno</summary>
+<details><summary>📦 <strong>requirements</strong>/ — Dependencias por entorno</summary>
 <pre>
 🐍 __init__.py
 📄 base.txt — Paquetes comunes
@@ -243,9 +243,9 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>🧪 test/ — Tests organizados por responsabilidad</summary>
+<details><summary>🧪 <strong>test</strong>/ — Tests organizados por responsabilidad</summary>
 
-<details><summary>📫 api_requests/</summary>
+<details><summary>📫 <strong>api_requests</strong>/</summary>
 <pre>
 📄 postman_productos_collection.json — Colección de pruebas manuales
 📄 usuarios.rest — Peticiones REST Client VSCode
@@ -253,7 +253,7 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>🎯 end-to-end/</summary>
+<details><summary>🎯 <strong>end-to-end</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐍 test_e2e_crear_producto.py — Valida flujo de creación completo
@@ -261,7 +261,7 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>🧪 mock/</summary>
+<details><summary>🧪 <strong>mock</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐍 mock_producto_repository.py — Simulación de DB
@@ -269,7 +269,7 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>⚡ performance/</summary>
+<details><summary>⚡ <strong>performance</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐍 locustfile.py — Pruebas de carga
@@ -277,7 +277,7 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>📞 services/</summary>
+<details><summary>📞 <strong>services</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐍 test_endpoint_crear_producto.py
@@ -285,7 +285,7 @@ Incluye:
 </pre>
 </details>
 
-<details><summary>🧩 usecases/</summary>
+<details><summary>🧩 <strong>usecases</strong>/</summary>
 <pre>
 🐍 __init__.py
 🐍 test_crear_producto_usecase.py
