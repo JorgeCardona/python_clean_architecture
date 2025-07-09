@@ -213,7 +213,7 @@ Incluye:
 <details>
 <summary>📂 <strong>templates/</strong> — Workflows reutilizables por otros pipelines</summary>
 <pre>
-📂 templates/
+📋 templates/
 ┣ 🐳 docker_build.yml         — Construcción de imagen Docker
 ┣ 🧪 pytest_run.yml           — Pruebas automáticas con pytest
 ┣ 📣 notify_slack.yml         — Notificaciones de eventos a canales de Slack
