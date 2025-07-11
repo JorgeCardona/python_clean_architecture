@@ -36,6 +36,10 @@ This project is a base template for building Python microservices using Clean Ar
 ┣ 📘 README.md                                 ← Documentación principal del proyecto
 ┗ ⚠️ .gitignore                                ← Define qué archivos o carpetas deben ser ignorados por el control de versiones ← Ignora carpetas como `logs/`, 
 ```
+
+# Arquitecturas
+Las arquitecturas de software definen cómo estructurar las aplicaciones, no solo en términos de organización de directorios, sino también en la forma en que se diseña y organiza el código. Esto incluye decidir qué componentes van en qué capas, cómo se dividen las responsabilidades, y qué elementos deben comunicarse entre sí para lograr una solución coherente, escalable y mantenible.
+
 # 🛸 PROJECT PACKAGES STRUCTURE
 Este proyecto está diseñado para mantener una estructura modular, escalable y fácil de mantener.  
 Cada directorio cumple una función específica dentro de la arquitectura, asegurando **separación de responsabilidades**, **alta cohesión** y **bajo acoplamiento**.
