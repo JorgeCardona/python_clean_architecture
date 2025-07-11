@@ -36,6 +36,8 @@ This project is a base template for building Python microservices using Clean Ar
 ┣ 📘 README.md                                 ← Documentación principal del proyecto
 ┗ ⚠️ .gitignore                                ← Define qué archivos o carpetas deben ser ignorados por el control de versiones ← Ignora carpetas como `logs/`, 
 ```
+# Estándar de codificación 
+> Es un conjunto de reglas y convenciones definidas por la industria que establecen cómo debe escribirse el código fuente para garantizar claridad, coherencia y calidad en el desarrollo de software. Su propósito es facilitar la colaboración entre desarrolladores, mejorar la mantenibilidad del código y reducir errores, siguiendo prácticas ampliamente aceptadas para cada lenguaje o tecnología.
 
 # Arquitecturas
 > Definen cómo estructurar las aplicaciones, no solo en términos de organización de directorios, sino también en la forma en que se diseña y organiza el código.
