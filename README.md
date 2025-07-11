@@ -45,8 +45,8 @@ Una arquitectura de software es como el plano de construcción de una aplicació
 Esta estructura incluye decisiones importantes como qué componentes van en qué capas, qué tareas realiza cada uno y cómo colaboran para resolver los problemas del sistema. Una buena arquitectura permite crear soluciones coherentes, escalables y fáciles de mantener, haciendo que la aplicación sea más comprensible, flexible ante cambios y más sencilla de mejorar con el tiempo.
 
 # Patrones de diseño
-> Son un conjunto de guias recomendadas para diseñar software, aplicando buenas prácticas en situaciones comunes de desarrollo.
-
+> Son un conjunto de guias recomendadas que se enfocan en cómo resolver situaciones específicas dentro del diseño del software, especialmente en la relación entre clases, objetos y responsabilidades.
+  
 Los patrones de diseño definen soluciones reutilizables para problemas comunes en el desarrollo de software, orientando cómo estructurar y relacionar clases, objetos y responsabilidades dentro del código. Especifican qué componentes deben asumir ciertos roles, cómo deben interactuar entre sí y qué principios seguir para lograr un diseño claro, flexible y fácil de mantener.
 
 # 🛸 PROJECT PACKAGES STRUCTURE
