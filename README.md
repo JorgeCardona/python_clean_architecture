@@ -38,7 +38,16 @@ This project is a base template for building Python microservices using Clean Ar
 ```
 
 # Arquitecturas
-Las arquitecturas de software definen cómo estructurar las aplicaciones, no solo en términos de organización de directorios, sino también en la forma en que se diseña y organiza el código. Esto incluye decidir qué componentes van en qué capas, cómo se dividen las responsabilidades, y qué elementos deben comunicarse entre sí para lograr una solución coherente, escalable y mantenible.
+> Definen cómo estructurar las aplicaciones, no solo en términos de organización de directorios, sino también en la forma en que se diseña y organiza el código.
+
+Una arquitectura de software es como el plano de construcción de una aplicación: define cómo se debe organizar, estructurar, diseñar y conectar cada parte del sistema para que funcione correctamente. No se trata solo de cómo se acomodan los archivos en carpetas, sino de cómo se estructura el código, cómo se dividen las responsabilidades entre las distintas partes del programa y cómo se comunican entre sí.
+
+Esta estructura incluye decisiones importantes como qué componentes van en qué capas, qué tareas realiza cada uno y cómo colaboran para resolver los problemas del sistema. Una buena arquitectura permite crear soluciones coherentes, escalables y fáciles de mantener, haciendo que la aplicación sea más comprensible, flexible ante cambios y más sencilla de mejorar con el tiempo.
+
+# Patrones de diseño
+> Son un conjunto de guias recomendadas para diseñar software, aplicando buenas prácticas en situaciones comunes de desarrollo.
+
+Los patrones de diseño definen soluciones reutilizables para problemas comunes en el desarrollo de software, orientando cómo estructurar y relacionar clases, objetos y responsabilidades dentro del código. Especifican qué componentes deben asumir ciertos roles, cómo deben interactuar entre sí y qué principios seguir para lograr un diseño claro, flexible y fácil de mantener.
 
 # 🛸 PROJECT PACKAGES STRUCTURE
 Este proyecto está diseñado para mantener una estructura modular, escalable y fácil de mantener.  
